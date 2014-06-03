@@ -7,49 +7,59 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <style>
     @font-face {
-        font-family:'Helvetica Neue LT Pro';
-        src: url('fonts/HelveticaNeueLTPro-UltLt.otf');
-        font-style: normal;
-        font-weight: normal;
+        font-weight:200;
+        font-style:normal;
+        font-family:'HelveticaNeue';
+        src:url("fonts/HelveticaNeue-UltraLight.otf");
     }
     body {
         background: url(images/osx-bg.jpg) no-repeat;
-        -webkit-background-size: cover;
         background-size: cover;
         text-align: center;
-        font-family:'Helvetica Neue LT Pro', sans-serif;
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
+        font-family:'HelveticaNeue', sans-serif;
     }
     .osx h1 {
-        color: #fff;
-        font-size: 100px;
-        font-weight: 100;
         margin-bottom: 0;
+        color: #fff;
+        font-weight: 200;
+        font-size: 100px;
+        font-family:'HelveticaNeue', sans-serif;
     }
     .yosemite {
-        text-align: center;
-        font-size: 260px;
+        position: relative;
+        margin: 8% auto 0;
         width: 260px;
         height: 260px;
-        background: #FBF5F2;
-        margin: 8% auto 0;
         border-radius: 50%;
-        line-height: 290px;
-        vertical-align: middle;
-        font-weight: 500;
+        background: #FBF5F2;
+        background: -webkit-linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
         background: linear-gradient(to bottom, #f8f8f8 5%, #eaeaea 100%);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: 200;
+        font-size: 200px;
+        font-family:'HelveticaNeue', sans-serif;
     }
     .yosemite span {
-        color: transparent;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        width: 260px;
+        height: 260px;
         background: url(images/osx-tip.png) no-repeat center center;
-        -webkit-background-size: cover;
-        background-size: cover;
-        webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
+        -webkit-background-size: cover;
+        background-size: cover;
+        color: transparent;
+        line-height: 260px;
+        webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
     }
     </style>
 </head>
@@ -57,9 +67,9 @@
 <body>
     <div class="osx">
         <div class="yosemite">
-            <span>x</span>
+            <span>X</span>
         </div>
-        <h1>OS X Yosemit</h1>
+        <h1>OS X Yosemite</h1>
     </div>
 </body>
 

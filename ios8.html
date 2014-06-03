@@ -7,21 +7,21 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <style>
     @font-face {
-        font-family:'Helvetica Neue LT Pro';
-        src: url('fonts/HelveticaNeueLTPro-UltLt.otf');
-        font-style: normal;
-        font-weight: normal;
+        font-weight:200;
+        font-style:normal;
+        font-family:'HelveticaNeue';
+        src:url("fonts/HelveticaNeue-UltraLight.otf");
     }
     body {
         background: url(images/ios8-bg.jpg) no-repeat;
-        -webkit-background-size: cover;
         background-size: cover;
         text-align: center;
-        font-family:'Helvetica Neue LT Pro', sans-serif;
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
+        font-family:'HelveticaNeue', sans-serif;
     }
     .ios {
+        position: relative;
         margin: 10% auto;
         width: 120px;
         height: 120px;
@@ -29,26 +29,26 @@
         border-radius: 30px;
         background: #fff;
         text-align: center;
-        font-size: 100px;
-        line-height: 150px;
+        font-size: 120px;
+        font-family:'HelveticaNeue', sans-serif;
     }
     .ios span {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 120px;
+        height: 120px;
         background: #2760e8;
-        /* Old browsers */
         background: -moz-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        /* FF3.6+ */
         background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, #2760e8), color-stop(23%, #00e7a0), color-stop(42%, #22a6c5), color-stop(63%, #ff5b1d), color-stop(85%, #ff8018), color-stop(100%, #ffc924));
-        /* Chrome,Safari4+ */
         background: -webkit-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        /* Chrome10+,Safari5.1+ */
         background: -o-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        /* Opera 11.10+ */
         background: -ms-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        /* IE10+ */
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         color: transparent;
+        line-height: 120px;
         webkit-text-fill-color: transparent;
         text-fill-color: transparent;
     }

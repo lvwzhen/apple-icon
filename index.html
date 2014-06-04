@@ -13,55 +13,76 @@
         src:url("fonts/HelveticaNeue-UltraLight.otf");
     }
     body {
-        background: url(images/osx-bg.jpg) no-repeat;
-        background-size: cover;
-        text-align: center;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
+        background:url(images/osx-bg.jpg) no-repeat;
+        /*background-size*/
+        -webkit-background-size:/*@@prefixmycss->No equivalent*/;
+        -moz-background-size:cover;
+        -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:cover;
+        text-align:center;
+        -webkit-font-smoothing:antialiased;
+        font-smoothing:antialiased;
         font-family:'HelveticaNeue', sans-serif;
     }
     .osx h1 {
-        margin-bottom: 0;
-        color: #fff;
-        font-weight: 200;
-        font-size: 100px;
+        margin-bottom:0;
+        color:#fff;
+        font-weight:200;
+        font-size:100px;
         font-family:'HelveticaNeue', sans-serif;
     }
     .yosemite {
-        position: relative;
-        margin: 8% auto 0;
-        width: 260px;
-        height: 260px;
-        border-radius: 50%;
-        background: #FBF5F2;
-        background: -webkit-linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
+        position:relative;
+        margin:8% auto 0;
+        width:260px;
+        height:260px;
+        /*border-radius*/
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background:#FBF5F2;
+        /*linear-gradient*/
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(#f8f8f8, 0.05), color-stop(#eaeaea, 1));
+        background:-webkit-linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
+        background: -moz-linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
+        background: -o-linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
+        background: linear-gradient(top, #f8f8f8 5%, #eaeaea 100%);
+        /*@@prefixmycss->No equivalent*/
+        background:-webkit-linear-gradient(to bottom, #f8f8f8 5%, #eaeaea 100%);
+        background: -moz-linear-gradient(to bottom, #f8f8f8 5%, #eaeaea 100%);
+        background: -o-linear-gradient(to bottom, #f8f8f8 5%, #eaeaea 100%);
         background: linear-gradient(to bottom, #f8f8f8 5%, #eaeaea 100%);
-        vertical-align: middle;
-        text-align: center;
-        font-weight: 200;
-        font-size: 200px;
+        vertical-align:middle;
+        text-align:center;
+        font-weight:200;
+        font-size:200px;
         font-family:'HelveticaNeue', sans-serif;
     }
     .yosemite span {
-        position: absolute;
+        position:absolute;
         top:0;
         right:0;
         bottom:0;
         left:0;
-        width: 260px;
-        height: 260px;
-        background: url(images/osx-tip.png) no-repeat center center;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-background-size: cover;
-        background-size: cover;
-        color: transparent;
-        line-height: 260px;
-        webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
+        width:260px;
+        height:260px;
+        background:url(images/osx-tip.png) no-repeat center center;
+        /*background-clip*/
+        -webkit-background-clip:text;
+        -moz-background-clip:text;
+        background-clip:text;
+        /*background-size*/
+        -webkit-background-size:/*@@prefixmycss->No equivalent*/;
+        -moz-background-size:cover;
+        -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:cover;
+        color:transparent;
+        line-height:260px;
+        webkit-text-fill-color:transparent;
+        text-fill-color:transparent;
     }
     </style>
+    <script src="http://cdn.staticfile.org/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>

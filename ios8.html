@@ -13,46 +13,57 @@
         src:url("fonts/HelveticaNeue-UltraLight.otf");
     }
     body {
-        background: url(images/ios8-bg.jpg) no-repeat;
-        background-size: cover;
-        text-align: center;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
+        background:url(images/ios8-bg.jpg) no-repeat;
+        /*background-size*/
+        -webkit-background-size:/*@@prefixmycss->No equivalent*/;
+        -moz-background-size:cover;
+        -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:cover;
+        text-align:center;
+        -webkit-font-smoothing:antialiased;
+        font-smoothing:antialiased;
         font-family:'HelveticaNeue', sans-serif;
     }
     .ios {
-        position: relative;
-        margin: 10% auto;
-        width: 120px;
-        height: 120px;
-        border: 1px solid #DDD;
-        border-radius: 30px;
-        background: #fff;
-        text-align: center;
-        font-size: 120px;
+        position:relative;
+        margin:10% auto;
+        width:120px;
+        height:120px;
+        border:1px solid #DDD;
+        /*border-radius*/
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+        border-radius:30px;
+        background:#fff;
+        text-align:center;
+        font-size:120px;
         font-family:'HelveticaNeue', sans-serif;
     }
     .ios span {
-        position: absolute;
-        top: 0px;
-        left: 0;
-        width: 120px;
-        height: 120px;
-        background: #2760e8;
+        position:absolute;
+        top:0px;
+        left:0;
+        width:120px;
+        height:120px;
+        background:#2760e8;
+        /*linear-gradient*/
+        background:-webkit-gradient(linear, 100% 100%, 0 0, color-stop(#2760e8, 0.01), color-stop(#00e7a0, 0.23), color-stop(#22a6c5, 0.42), color-stop(#ff5b1d, 0.63), color-stop(#ff8018, 0.85), color-stop(#ffc924, 1));
+        background:-webkit-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
         background: -moz-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, #2760e8), color-stop(23%, #00e7a0), color-stop(42%, #22a6c5), color-stop(63%, #ff5b1d), color-stop(85%, #ff8018), color-stop(100%, #ffc924));
-        background: -webkit-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
         background: -o-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        background: -ms-linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        line-height: 120px;
-        webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
+        background: linear-gradient(135deg, #2760e8 1%, #00e7a0 23%, #22a6c5 42%, #ff5b1d 63%, #ff8018 85%, #ffc924 100%);
+        background:-webkit-gradient(linear, left top, right bottom, color-stop(1%, #2760e8), color-stop(23%, #00e7a0), color-stop(42%, #22a6c5), color-stop(63%, #ff5b1d), color-stop(85%, #ff8018), color-stop(100%, #ffc924));
+        /*background-clip*/
+        -webkit-background-clip:text;
+        -moz-background-clip:text;
+        background-clip:text;
+        color:transparent;
+        line-height:120px;
+        webkit-text-fill-color:transparent;
+        text-fill-color:transparent;
     }
     </style>
+    <script src="http://cdn.staticfile.org/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>

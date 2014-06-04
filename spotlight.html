@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotlight</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    @font-face {
+        font-weight:200;
+        font-style:normal;
+        font-family:'HelveticaNeue';
+        src:url("fonts/HelveticaNeue-UltraLight.otf");
+    }
+    body {
+        background:url(images/spotlight-bg.png) no-repeat;
+        /*background-size*/
+        -webkit-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        -moz-background-size:cover;
+        -o-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        background-size:cover;
+        text-align:center;
+        -webkit-font-smoothing:antialiased;
+        font-smoothing:antialiased;
+        font-family:'HelveticaNeue', sans-serif;
+    }
+    h1 {
+        text-align: center;
+        color:#919191;
+        font-weight:200;
+        font-size:100px;
+    }
+    .spotlight {
+        width: 120px;
+        height: 120px;
+        position:relative;
+        margin:10% auto;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #00c6fe 5%, #0081ff 100%);
+        position: relative;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    .spotlight span:after, .spotlight span:before {
+        content:'';
+        position: absolute;
+    }
+    .spotlight span {
+        display: block;
+        border: 0;
+    }
+    .spotlight span:before {
+        width: 55px;
+        height: 55px;
+        border: 4px solid #fff;
+        background: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        top: 20px;
+        left: 20px;
+    }
+    .spotlight span:after {
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        right: 20px;
+        bottom: 30px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    </style>
+    <script src="http://cdn.staticfile.org/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="spotlight">
+        <span></span>
+    </div>
+    <h1>Spotlight</h1>
+</body>
+
+</html>

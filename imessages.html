@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iMessages</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    @font-face {
+        font-weight:200;
+        font-style:normal;
+        font-family:'HelveticaNeue';
+        src:url("fonts/HelveticaNeue-UltraLight.otf");
+    }
+    body {
+        background:url(images/imessages-bg.jpg) no-repeat;
+        /*background-size*/
+        -webkit-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        -moz-background-size:cover;
+        -o-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        background-size:cover;
+        text-align:center;
+        font-family:'HelveticaNeue', sans-serif;
+        -webkit-font-smoothing:antialiased;
+        font-smoothing:antialiased;
+    }
+    h1 {
+        color:#f1f1f1;
+        text-align: center;
+        font-weight:200;
+        font-size:100px;
+    }
+    .imessages {
+        position:relative;
+        margin:10% auto;
+        width: 180px;
+        height: 180px;
+    }
+    .imessages .b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 170px;
+        height: 145px;
+        -webkit-border-radius: 85px / 72.5px;
+        -moz-border-radius: 85px / 72.5px;
+        border-radius: 85px / 72.5px;
+        background: linear-gradient(to bottom, #56c4fa 5%, #0b63c2 100%);
+    }
+    .imessages .b:after {
+        position: absolute;
+        bottom: -5px;
+        left: 33px;
+        border-top: 20px solid #0C6ACF;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        content:'';
+        -webkit-transform: rotateZ(52deg);
+        -webkit-transform: rotateZ(52deg);
+        -moz-transform: rotateZ(52deg);
+        -ms-transform: rotateZ(52deg);
+        -o-transform: rotateZ(52deg);
+    }
+    .imessages .m {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        width: 110px;
+        height: 90px;
+        -webkit-border-radius: 55px / 45px;
+        -moz-border-radius: 55px / 45px;
+        border-radius: 55px / 45px;
+        background: linear-gradient(to bottom, #f7fcff 5%, #ddecf7 100%);
+    }
+    .imessages .m:after {
+        position: absolute;
+        right: 18px;
+        bottom: -5px;
+        border-top: 20px solid #ddecf7;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        content:'';
+        -webkit-transform: rotateZ(-45deg);
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -o-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+    }
+    .imessages .tip {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -8px;
+        width: 100%;
+    }
+    .imessages .dot {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #115497 5%, #0f5eb0 100%);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+        *display: inline;
+        *zoom: 1;
+    }
+    </style>
+    <script src="http://cdn.staticfile.org/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="imessages">
+        <span class="b"></span>
+        <span class="m">
+            <span class="tip">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </span>
+        </span>
+    </div>
+    <h1>iMessages</h1>
+</body>
+
+</html>

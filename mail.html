@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    @font-face {
+        font-weight:200;
+        font-style:normal;
+        font-family:'HelveticaNeue';
+        src:url("fonts/HelveticaNeue-UltraLight.otf");
+    }
+    body {
+        background:#fff url(images/spotlight-bg.png) no-repeat;
+        /*background-size*/
+        -webkit-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        -moz-background-size:cover;
+        -o-background-size:
+        /*@@prefixmycss->No equivalent*/
+        ;
+        background-size:cover;
+        text-align:center;
+        font-family:'HelveticaNeue', sans-serif;
+        -webkit-font-smoothing:antialiased;
+        font-smoothing:antialiased;
+    }
+    h1 {
+        color:#333;
+        text-align: center;
+        font-weight:200;
+        font-size:100px;
+    }
+    .main {
+        -webkit-transform: rotateZ(-20deg);
+        -webkit-transform: rotateZ(-20deg);
+        -moz-transform: rotateZ(-20deg);
+        -ms-transform: rotateZ(-20deg);
+        -o-transform: rotateZ(-20deg);
+        margin: 10% 0 0;
+    }
+    .mail {
+        width: 60px;
+        height: 80px;
+        display: inline-block;
+        padding: 5px;
+        background: white;
+        position: relative;
+        background: radial-gradient(transparent 0px, transparent 3px, white 3px, white);
+        background-size: 10px 10px;
+        background-position: -15px -15px;
+    }
+    .mail:after {
+        content:'';
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    .mail img {
+        width: 60px;
+        height: 80px;
+    }
+    .icon-apple {
+        width: 15px;
+        height: 15px;
+        fill: #405f84;
+        
+    }
+    .apple{
+        padding: 8px;
+        border:1px double #405f84;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        -webkit-transform: rotateZ(20deg) translate(24px, -20px);
+        display: none;
+    }
+
+    </style>
+    <script src="http://cdn.staticfile.org/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="mail">
+            <img src="images/mail-icon.jpg" alt="">
+        </div>
+        <div class="stamp">
+
+            <div class="apple">
+                <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+        <defs>
+            <g id="icon-apple">
+                <path class="path1" d="M24.734 17.003c-0.040-4.053 3.305-5.996 3.454-6.093-1.88-2.751-4.808-3.127-5.851-3.171-2.492-0.252-4.862 1.467-6.127 1.467-1.261 0-3.213-1.43-5.28-1.392-2.716 0.040-5.221 1.579-6.619 4.012-2.822 4.897-0.723 12.151 2.028 16.123 1.344 1.944 2.947 4.127 5.051 4.049 2.026-0.081 2.793-1.311 5.242-1.311 2.45 0 3.138 1.311 5.283 1.271 2.18-0.041 3.562-1.981 4.897-3.931 1.543-2.255 2.179-4.439 2.216-4.551-0.048-0.022-4.252-1.632-4.294-6.473zM20.705 5.11c1.117-1.355 1.871-3.235 1.665-5.11-1.609 0.066-3.559 1.072-4.713 2.423-1.036 1.199-1.942 3.113-1.699 4.951 1.796 0.14 3.629-0.913 4.747-2.264z"></path>
+            </g>
+        </defs>
+    </svg>
+                <svg class="icon icon-apple" viewBox="0 0 32 32">
+                    <use xlink:href="#icon-apple"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <h1>Mail</h1>
+
+    
+</body>
+
+</html>

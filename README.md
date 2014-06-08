@@ -7,3 +7,4 @@ CSS3 制作苹果图标
 * [Spotlight](https://lvwzhen.github.io/apple-icon/spotlight.html)
 * [iMessages](https://lvwzhen.github.io/apple-icon/imessages.html)
 * [Mail](https://lvwzhen.github.io/apple-icon/mail.html)
+* [iPhoto](https://lvwzhen.github.io/apple-icon/iphoto.html)

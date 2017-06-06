@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Store</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    body {
+        background: url(images/ios11.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin-top: 20%;
+        border-radius: 23%;
+        margin: 10% auto 0;
+        background: #60c0f3;
+        background: -webkit-gradient(linear, left top, left bottom, from(#60c0f3), to(#4582ef));
+        background: linear-gradient(to bottom, #60c0f3 0%, #4582ef 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#60c0f3', endColorstr='#4582ef', GradientType=0);
+        position: relative;
+    }
+    
+    .line {
+        width: 85px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        margin-left: -42.5px;
+        bottom: 50px;
+        z-index: 1;
+    }
+    
+    .pen01 {
+        position: absolute;
+        height: 10px;
+        width: 35px;
+        left: 20px;
+        bottom: 48px;
+        background-color: #fff;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+        border-radius: 3px;
+        border: 2px solid #54a4f1;
+        z-index: 2;
+    }
+    
+    .pen01:after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 15px 5px 0;
+        border-color: transparent #fff transparent transparent;
+        content: '';
+        left: -20px;
+    }
+    
+    .pen01:before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        right: -14px;
+        border-radius: 0 3px 3px 0;
+    }
+    
+    .pen02 {
+        position: absolute;
+        height: 10px;
+        width: 45px;
+        right: 26px;
+        bottom: 68px;
+        background-color: #fff;
+        -webkit-transform: rotate(60deg);
+        transform: rotate(60deg);
+        border-radius: 3px;
+        border: 2px solid #54a5f1;
+        z-index: 2;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .pen02:before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        right: -14px;
+        border-radius: 1px;
+        border: 2px solid #509af1;
+        top: -2px;
+    }
+    
+    .pen02 .brush {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        right: -28px;
+        border-radius: 50%;
+        top: -1px;
+        z-index: 6;
+    }
+    
+    .pen02 .nib {
+        position: absolute;
+        right: -39px;
+        top: 2px;
+        height: 12px;
+        width: 20px;
+        -webkit-transform: rotate(-157deg);
+        transform: rotate(-157deg);
+    }
+    
+    .pen02 .nib:after {
+        position: absolute;
+        content: '';
+        width: 18px;
+        height: 12px;
+        border-bottom-left-radius: 50px 60px;
+        border-top-right-radius: 70px 10px;
+        background-color: #fff;
+        top: 0px;
+        right: 1px;
+    }
+    
+    .pen02 .nib:before {
+        position: absolute;
+        top: -4px;
+        right: 3px;
+        content: '';
+        width: 16px;
+        height: 10px;
+        border-bottom-right-radius: 50px 30px;
+        background-color: #4b91f0;
+        z-index: 5;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    
+    .icon-text {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="pen01"></div>
+        <div class="pen02">
+            <div class="brush"></div>
+            <div class="nib"></div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="icon-text">App Store</div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Files</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+        font-family: -apple-system, Helvetica, Arial, sans-serif;
+    }
+    
+    body {
+        background: url(images/files-bg.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin-top: 20%;
+        border-radius: 23%;
+        margin: 10% auto 0;
+        background: #fff;
+        position: relative; 
+    }
+    
+    .block {
+        width: 90px;
+        height: 68px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -45px;
+        margin-top: -34px;
+    }
+    
+    .block01 {
+        width: 90px;
+        height: 15px;
+        background-color: #4DA1E8;
+        position: absolute;
+        bottom: 48px;
+        border-radius: 0 10px 0 0;
+        z-index: 1;
+        background: #4b9de6;
+        background: -moz-linear-gradient(top, #4b9de6 0%, #408ce4 100%);
+        background: -webkit-linear-gradient(top, #4b9de6 0%, #408ce4 100%);
+        background: linear-gradient(to bottom, #4b9de6 0%, #408ce4 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4b9de6', endColorstr='#408ce4', GradientType=0);
+    }
+    
+    .block02 {
+        width: 90px;
+        height: 55px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px 6px 10px 10px;
+        z-index: 3;
+        background: #53ade7;
+        background: -moz-linear-gradient(top, #53ade7 0%, #2f68de 100%);
+        background: -webkit-linear-gradient(top, #53ade7 0%, #2f68de 100%);
+        background: linear-gradient(to bottom, #53ade7 0%, #2f68de 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#53ade7', endColorstr='#2f68de', GradientType=0);
+    }
+    
+    .block03 {
+        width: 84px;
+        height: 57px;
+        background-color: #fff;
+        position: absolute;
+        left: 3px;
+        bottom: 0;
+        border-radius: 6px 6px 10px 10px;
+        z-index: 2;
+    }
+    
+    .block04 {
+        width: 32px;
+        height: 6px;
+        position: absolute;
+        bottom: 63px;
+        left: 0;
+        background-color: #4DA1E8;
+        border-radius: 10px 10px 0 0;
+        background: #459ee6;
+        background: -moz-linear-gradient(top, #459ee6 0%, #4b9de6 100%);
+        background: -webkit-linear-gradient(top, #459ee6 0%, #4b9de6 100%);
+        background: linear-gradient(to bottom, #459ee6 0%, #4b9de6 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#459ee6', endColorstr='#4b9de6', GradientType=0);
+    }
+    
+    .block04:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 6px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    
+    .icon-text {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="block">
+            <div class="block01"></div>
+            <div class="block02"></div>
+            <div class="block03"></div>
+            <div class="block04"></div>
+        </div>
+    </div>
+    <div class="icon-text">Files</div>
+</body>
+
+</html>

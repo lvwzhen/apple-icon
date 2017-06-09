@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+        font-family: -apple-system, Helvetica, Arial, sans-serif;
+    }
+    
+    body {
+        background: url(images/calculator-bg.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin-top: 20%;
+        border-radius: 23%;
+        margin: 10% auto 0;
+        background: #D4D4D4;
+        position: relative;
+    }
+    
+    .block {
+        width: 64px;
+        height: 90px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -32px;
+        margin-top: -45px;
+        background-color: #0B0B08;
+        border-radius: 10px;
+        padding: 6px;
+        font-size: 0;
+    }
+    
+    .block div {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+    }
+    
+    .block01 {
+        border-radius: 5px;
+        background-color: #505050;
+        width: 100%;
+        height: 22px;
+        margin-bottom: 2.5px;
+    }
+    
+    .block02,
+    .block03,
+    .block04,
+    .block05,
+    .block06,
+    .block07,
+    .block08,
+    .block09 {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #D4D4D4;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-right: 5px;
+    }
+
+
+    
+    .block08 {
+        width: 33px;
+        border-radius: 1000px;
+    }
+    .block04,.block07,.block09{
+        background-color: #EE8D34;
+        margin-right: 0;
+    }
+    
+    .icon-text {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="block">
+            <div class="block01"></div>
+            <div class="block02"></div>
+            <div class="block03"></div>
+            <div class="block04"></div>
+            <div class="block05"></div>
+            <div class="block06"></div>
+            <div class="block07"></div>
+            <div class="block08"></div>
+            <div class="block09"></div>
+        </div>
+    </div>
+    <div class="icon-text">Calculator</div>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iTunes Store</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+        font-family: -apple-system, Helvetica, Arial, sans-serif;
+    }
+    
+    body {
+        background: url(images/itunes-store-bg.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin-top: 20%;
+        border-radius: 23%;
+        margin: 10% auto 0;
+        background: #D4D4D4;
+        position: relative;
+        background: #d35ebe;
+        background: -moz-linear-gradient(top, #d35ebe 0%, #c14eea 100%);
+        background: -webkit-linear-gradient(top, #d35ebe 0%, #c14eea 100%);
+        background: linear-gradient(to bottom, #d35ebe 0%, #c14eea 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d35ebe', endColorstr='#c14eea', GradientType=0);
+    }
+    
+    .block {
+        width: 90px;
+        height: 86px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -45px;
+        margin-top: -45px;
+    }
+    
+    .block div {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 11px 32px 11px;
+        border-color: transparent transparent #fff transparent;
+        opacity: .8;
+        top: 0;
+        left: 50%;
+        margin-left: -10px;
+    }
+    
+    .block02 {
+        transform: rotate(70.6deg) translateY(-21px) translateX(30px);
+    }
+    
+    .block03 {
+        transform: rotate(145.1deg) translateY(-57px) translateX(17px);
+    }
+    
+    .block04 {
+        transform: rotate(-145deg) translateY(-56.8px) translateX(-17.2px);
+    }
+    
+    .block05 {
+        transform: rotate(-68.8deg) translateY(-20.3px) translateX(-30.1px);
+    }
+    
+    .block06 {
+        width: 38px;
+        left: 27px;
+        top: 32px;
+        position: absolute;
+        border-width: 0 8px 21px 8px;
+        border-style: solid;
+        border-color: #fff transparent;
+    }
+    
+    .block06:before {
+        position: absolute;
+        bottom: -34px;
+        left: -8px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 13px 19px 0 19px;
+        border-color: #fff transparent transparent transparent;
+    }
+    
+    .icon-text {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        text-shadow: 1px 1px 1px #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="block">
+            <div class="block01"></div>
+            <div class="block02"></div>
+            <div class="block03"></div>
+            <div class="block04"></div>
+            <div class="block05"></div>
+            <span class="block06"></span>
+        </div>
+    </div>
+    <div class="icon-text">iTunes Store</div>
+</body>
+
+</html>
